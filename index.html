@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>getElementById example</title>
+</head>
+    <body>
+        <table class = "calculator">
+            <tr>
+                <td id ="result" colspan="4">Results are here for you to see</td>
+            </tr>
+            <tr>
+                <td><button class = "operator" value = "+" onclick="display('+')">+</button></td>
+                <td><button class = "operator" value = "-" onclick="display('-')">-</button></td>
+                <td><button class = "operator" value = "*">*</button></td>
+                <td><button class = "operator" value = "/">/</button></td>
+            </tr>
+            <tr>
+                <td><button class = "number" value = "7">7</button></td>
+                <td><button class = "number" value = "8">8</button></td>
+                <td><button class = "number" value = "9">9</button></td>
+                <td rowspan = "4"><button class = "equals" value = "=">=</button></td>
+            </tr>
+            <tr>
+                <td><button class = "number">4</button></td>
+                <td><button class = "number">5</button></td>
+                <td><button class = "number">6</button></td>
+            </tr>
+            <tr>
+                <td><button class = "number">1</button></td>
+                <td><button class = "number">2</button></td>
+                <td><button class = "number">3</button></td>
+            </tr>
+            <tr>
+                <td><button class = "number">0</button></td>
+                <td><button class = "decimal">.</button></td>
+                <td><button class = "clear">C</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
