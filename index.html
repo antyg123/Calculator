@@ -5,37 +5,38 @@
     <title>getElementById example</title>
 </head>
     <body>
-        <table class = "calculator">
+        <table id = "calculator">
             <tr>
-                <td id ="result" colspan="4">Results are here for you to see</td>
+                <td id ="result" colspan="4" value="0"></td>
             </tr>
             <tr>
-                <td><button class = "operator" value = "+" onclick="display('+')">+</button></td>
-                <td><button class = "operator" value = "-" onclick="display('-')">-</button></td>
-                <td><button class = "operator" value = "*">*</button></td>
-                <td><button class = "operator" value = "/">/</button></td>
+                <td><button id = "add" value = "+" onclick="addition()">+</button></td>
+                <td><button id = "plus" value = "-" onclick="displayValue()">-</button></td>
+                <td><button id = "times" value = "*" onclick="displayValue()">*</button></td>
+                <td><button id = "devide" value = "/" onclick="displayValue()">/</button></td>
             </tr>
             <tr>
-                <td><button class = "number" value = "7">7</button></td>
-                <td><button class = "number" value = "8">8</button></td>
-                <td><button class = "number" value = "9">9</button></td>
-                <td rowspan = "4"><button class = "equals" value = "=">=</button></td>
+                <td><button id = "seven" value = "7" onclick="displaySeven()">7</button></td>
+                <td><button id = "eight" value = "8" onclick="displayEight()">8</button></td>
+                <td><button id = "nine" value = "9" onclick="displayNine()">9</button></td>
+                <td rowspan = "4"><button id = "equals" value = "=">=</button></td>
             </tr>
             <tr>
-                <td><button class = "number">4</button></td>
-                <td><button class = "number">5</button></td>
-                <td><button class = "number">6</button></td>
+                <td><button id = "four" value = "4" onclick="displayFour()">4</button></td>
+                <td><button id = "five" value = "5" onclick="displayFive()">5</button></td>
+                <td><button id = "six" value = "6" onclick="displaySix()">6</button></td>
             </tr>
             <tr>
-                <td><button class = "number">1</button></td>
-                <td><button class = "number">2</button></td>
-                <td><button class = "number">3</button></td>
+                <td><button id = "one" value = "1" onclick="displayOne()">1</button></td>
+                <td><button id = "two" value = "2" onclick="displayTwo()">2</button></td>
+                <td><button id = "three" value = "3" onclick="displayThree()">3</button></td>
             </tr>
             <tr>
-                <td><button class = "number">0</button></td>
-                <td><button class = "decimal">.</button></td>
-                <td><button class = "clear">C</button></td>
+                <td><button id = "zero" value = "0" onclick="displayZero()">0</button></td>
+                <td><button id = "decimal" value = "." onclick="displayValue()">.</button></td>
+                <td><button id = "clear" value = "C" onclick="clearResults()">C</button></td>
             </tr>
         </table>
+    <script src = "main.js"></script>
     </body>
 </html>
