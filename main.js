@@ -1,16 +1,17 @@
-// build a calculator 
+// Calculator 
 
-//How it works
-//Awaits an event (button click)
-//button clicks append to result until operand is selected (this includes decimal)
-//operand is selected
-//New number selected is appended until a new operand or equals is selected, updating the result.
+//How it works:
+//The display is an empty cell
+//Each button has it's own function upon click
+//The function adds the value of the button to the display 
+//When '=' is pressed, the string is evaluated and displayed
+//
 
 //Functions
 //Operand
 //append
 //update result
-//clear result
+//clear input
 //convert number from string to integer
 
 //Properties 
@@ -19,55 +20,60 @@
 
 
 //Add a number to the result
-let result = document.getElementById('result');
-let result2 = "";
+let input = document.getElementById('input');
+
+
 //function to be executed upon the click
 function displayOne(){
-    result.innerText += "1";
+    input.innerText += "1";
 }
 function displayTwo(){
-    result.innerText += "2";
+    input.innerText += "2";
 }
 function displayThree(){
-    result.innerText += "3";
+    input.innerText += "3";
 }
 function displayFour(){
-    result.innerText += "4";
+    input.innerText += "4";
 }
 function displayFive(){
-    result.innerText += "5";
+    input.innerText += "5";
 }
 function displaySix(){
-    result.innerText += "6";
+    input.innerText += "6";
 }
 function displaySeven(){
-    result.innerText += "7";
+    input.innerText += "7";
 }
 function displayEight(){
-    result.innerText += "8";
+    input.innerText += "8";
 }
 function displayNine(){
-    result.innerText += "9";
+    input.innerText += "9";
 }
 function displayZero(){
-    result.innerText += "0";
+    input.innerText += "0";
 }
 function clearResults(){
-    result.innerText="";
+    input.innerText="";
 }
 function addition(){
-    Number(result.innerText);
-
-    Number(results.innerText)*Number(result2);
+    input.innerText += "+" 
 }
 function subtraction(){
-
+    input.innerText += "-"
 }
 function multiply(){
-
+    input.innerText += "*"
 }
 function division(){
-
+    input.innerText += "/"
 }
-
+function decimal(){
+    input.innerText +="."
+}
+function solve(){
+    let result = eval(input.innerText);
+    input.innerText= result;
+}
 

@@ -7,19 +7,19 @@
     <body>
         <table id = "calculator">
             <tr>
-                <td id ="result" colspan="4" value="0"></td>
+                <td id ="input" colspan="4" value="0"></td>
             </tr>
             <tr>
                 <td><button id = "add" value = "+" onclick="addition()">+</button></td>
-                <td><button id = "plus" value = "-" onclick="displayValue()">-</button></td>
-                <td><button id = "times" value = "*" onclick="displayValue()">*</button></td>
-                <td><button id = "devide" value = "/" onclick="displayValue()">/</button></td>
+                <td><button id = "plus" value = "-" onclick="subtraction()">-</button></td>
+                <td><button id = "times" value = "*" onclick="multiply()">*</button></td>
+                <td><button id = "devide" value = "/" onclick="division()">/</button></td>
             </tr>
             <tr>
                 <td><button id = "seven" value = "7" onclick="displaySeven()">7</button></td>
                 <td><button id = "eight" value = "8" onclick="displayEight()">8</button></td>
                 <td><button id = "nine" value = "9" onclick="displayNine()">9</button></td>
-                <td rowspan = "4"><button id = "equals" value = "=">=</button></td>
+                <td rowspan = "4"><button id = "equals" value = "=" onclick="solve()">=</button></td>
             </tr>
             <tr>
                 <td><button id = "four" value = "4" onclick="displayFour()">4</button></td>
@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td><button id = "zero" value = "0" onclick="displayZero()">0</button></td>
-                <td><button id = "decimal" value = "." onclick="displayValue()">.</button></td>
+                <td><button id = "decimal" value = "." onclick="decimal()">.</button></td>
                 <td><button id = "clear" value = "C" onclick="clearResults()">C</button></td>
             </tr>
         </table>
